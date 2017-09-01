@@ -1,7 +1,9 @@
 theme = "after-dark"
 baseURL = "http://antobiotics.github.io"
 languageCode = "en-us"
-title = "Les Antobitics, c'est pas automatique"
+title = "Les Antobiotics, c'est pas automatique"
+enableEmoji = true
+
 
 [[menu.main]]
   name = "Home"
@@ -17,6 +19,11 @@ title = "Les Antobitics, c'est pas automatique"
 
 [[menu.main]]
   name = "About"
-  weight = 3
-  identifier = "aout"
   url = "/about/"
+
+[params]
+  hide_author = true
+  powered_by = false
+
+[permalinks]
+  post = "/:year/:month/:day/:title/"
