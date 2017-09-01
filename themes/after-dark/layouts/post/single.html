@@ -2,6 +2,8 @@
   {{ partial "menu.html" . }}
 {{ end }}
 {{ define "main" }}
+{{< highlight python >}}
+
   <article itemscope itemtype="http://schema.org/BlogPosting">
     {{ template "_internal/schema.html" . }}
     <header>
@@ -27,8 +29,11 @@
       {{ partial "post/byline.html" . }}
       {{ partial "post/related-content.html" . }}
     </footer>
-  </article>
+</article>
+
+{{< highlight python >}}
 {{ end }}
 {{ define "footer" }}
   {{ partial "powered-by.html" . }}
-{{ end }}
+  {{ end }}
+
